@@ -1,7 +1,7 @@
 with open('Project1_2015', 'r') as file:
     current_file = file.read()
 floor_counter = 0
-basement_position = 0
+basement_position = None
 
 for index, char in enumerate(current_file):
     if char == '(':
@@ -9,7 +9,7 @@ for index, char in enumerate(current_file):
     else:
         floor_counter -= 1
 
-    if floor_counter == -1 and basement_position == 0:
+    if basement_position is None and floor_counter == -1:
         basement_position = index + 1
 
 print(floor_counter)
