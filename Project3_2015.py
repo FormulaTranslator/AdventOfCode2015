@@ -1,34 +1,26 @@
-x_coordinate1 = 0
-y_coordinate1 = 0
-x_coordinate2 = 0
-y_coordinate2 = 0
-coordinate_list = [(0, 0)]
+def get_houses(directions_str, house=(0, 0)):
+    houses = {house}
+    for direction in directions_str:
+        house = get_houses.move[direction](*house)
+        houses.add(house)
+    return houses
+
+
+# This dictionary holds the equations for the various moves, like case conditions in VBA
+get_houses.move = {
+    '>': lambda x, y: (x + 1, y),
+    '^': lambda x, y: (x, y + 1),
+    '<': lambda x, y: (x - 1, y),
+    'v': lambda x, y: (x, y - 1)
+}
 
 with open('Project3_2015', 'r') as file:
-    direction_file = file.read()
+    directions = file.read()
 
-for index, char in enumerate(direction_file):
-    if index % 2 == 0:
-        if char == '>':
-            x_coordinate1 += 1
-        elif char == '^':
-            y_coordinate1 += 1
-        elif char == '<':
-            x_coordinate1 -= 1
-        elif char == 'v':
-            y_coordinate1 -= 1
-        if coordinate_list.count((x_coordinate1, y_coordinate1)) == 0:
-            coordinate_list.append((x_coordinate1, y_coordinate1))
-    else:
-        if char == '>':
-            x_coordinate2 += 1
-        elif char == '^':
-            y_coordinate2 += 1
-        elif char == '<':
-            x_coordinate2 -= 1
-        elif char == 'v':
-            y_coordinate2 -= 1
-        if coordinate_list.count((x_coordinate2, y_coordinate2)) == 0:
-            coordinate_list.append((x_coordinate2, y_coordinate2))
 
-print(len(coordinate_list))
+houses_visited = get_houses(directions)
+print(len(houses_visited))
+
+# | unions the 2 sets
+year2_houses_visited = get_houses(directions[::2]) | get_houses(directions[1::2])
+print(len(year2_houses_visited))

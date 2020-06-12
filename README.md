@@ -1,9 +1,9 @@
 # AdventOfCode2015
 Projects from the Advent of Code daily challenges
 
-Project 1:
+#### Project 1:
 
-Project 2: Text file fundamentals: sorting, splitting by delimiter
+#### Project 2: Text file fundamentals: sorting, splitting by delimiter
 
 The elves are running low on wrapping paper, and so they need to submit an order for more. They have a list of the dimensions (length l, width w, and height h) of each present, and only want to order exactly as much as they need.
 
@@ -19,29 +19,43 @@ The ribbon required to wrap a present is the shortest distance around its sides,
 
 How many total feet of ribbon should they order?
 
-Project 3:
+#### Project 3: Using sets, Defs, Dicts, and slices
 
-Project 4:
+Santa is delivering presents to an infinite two-dimensional grid of houses.
 
-Project 5:
+He begins by delivering a present to the house at his starting location, and then an elf at the North Pole calls him via radio and tells him where to move next. Moves are always exactly one house to the north (^), south (v), east (>), or west (<). After each move, he delivers another present to the house at his new location.
 
-Project 6:
+However, the elf back at the north pole has had a little too much eggnog, and so his directions are a little off, and Santa ends up visiting some houses more than once. How many houses receive at least one present?
 
-Project 7:
+--- Part Two ---
 
-Project 8:
+The next year, to speed up the process, Santa creates a robot version of himself, Robo-Santa, to deliver presents with him.
 
-Project 9:
+Santa and Robo-Santa start at the same location (delivering two presents to the same starting house), then take turns moving based on instructions from the elf, who is eggnoggedly reading from the same script as the previous year.
 
-Project 10:
+This year, how many houses receive at least one present?
 
-Project 11:
+#### Project 4:
 
-Project 12: JSON file deciphering and first use of recursive functions
+#### Project 5:
 
-Project 13: Use of Permutations
+#### Project 6:
 
-Project 14: For loops to solve math problems with many repetitive steps
+#### Project 7:
+
+#### Project 8:
+
+#### Project 9:
+
+#### Project 10:
+
+#### Project 11:
+
+####Project 12: JSON file deciphering and first use of recursive functions
+
+#### Project 13: Use of Permutations
+
+#### Project 14: For loops to solve math problems with many repetitive steps
 
 This year is the Reindeer Olympics! Reindeer can fly at high speeds, but must rest occasionally to recover their energy. Santa would like to know which of his reindeer is fastest, and so he has them race.
 
@@ -56,7 +70,7 @@ Seeing how reindeer move in bursts, Santa decides he's not pleased with the old 
 Instead, at the end of each second, he awards one point to the reindeer currently in the lead. (If there are multiple reindeer tied for the lead, they each get one point.) He keeps the traditional 2503 second time limit, of course, as doing otherwise would be entirely ridiculous.
 
 
-Project 15: Second use of recursive function (unnecessarily though)
+#### Project 15: Second use of recursive function (unnecessarily though)
 
 Today, you set out on the task of perfecting your milk-dunking cookie recipe. All you have to do is find the right balance of ingredients.
 
@@ -74,7 +88,7 @@ You can only measure ingredients in whole-teaspoon amounts accurately, and you h
 Your cookie recipe becomes wildly popular! Someone asks if you can make another recipe that has exactly 500 calories per cookie (so they can use it as a meal replacement). Keep the rest of your award-winning process the same (100 teaspoons, same ingredients, same scoring system).
 
 
-Project 16:
+#### Project 16:
 
 Your Aunt Sue has given you a wonderful gift, and you'd like to send her a thank you card. However, there's a small problem: she signed it "From, Aunt Sue".
 
@@ -92,36 +106,39 @@ trees, all in one group.
 cars, presumably by exhaust or gasoline or something.
 perfumes, which is handy, since many of your Aunts Sue wear a few kinds.
 In fact, many of your Aunts Sue have many of these. You put the wrapping from the gift into the MFCSAM. It beeps inquisitively at you a few times and then prints out a message on ticker tape:
-
-children: 3
-cats: 7
-samoyeds: 2
-pomeranians: 3
-akitas: 0
-vizslas: 0
-goldfish: 5
-trees: 3
-cars: 2
-perfumes: 1
+- children: 3
+- cats: 7
+- samoyeds: 2
+- pomeranians: 3
+- akitas: 0
+- vizslas: 0
+- goldfish: 5
+- trees: 3
+- cars: 2
+- perfumes: 1
 
 You make a list of the things you can remember about each Aunt Sue. Things missing from your list aren't zero - you simply don't remember the value.
 
 What is the number of the Sue that got you the gift?
 
-Project 17:
+#### Project 17:
 
-Project 18:
+The elves bought too much eggnog again - 150 liters this time. To fit it all into your refrigerator, you'll need to move it into smaller containers. You take an inventory of the capacities of the available containers.
 
-Project 19:
+Filling all containers entirely, how many different combinations of containers can exactly fit all 150 liters of eggnog?
 
-Project 20:
+#### Project 18:
 
-Project 21:
+#### Project 19:
 
-Project 22:
+#### Project 20:
 
-Project 23:
+#### Project 21:
 
-Project 24:
+#### Project 22:
 
-Project 25:
+#### Project 23:
+
+#### Project 24:
+
+#### Project 25:
