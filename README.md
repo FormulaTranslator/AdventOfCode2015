@@ -101,7 +101,7 @@ You can only measure ingredients in whole-teaspoon amounts accurately, and you h
 Your cookie recipe becomes wildly popular! Someone asks if you can make another recipe that has exactly 500 calories per cookie (so they can use it as a meal replacement). Keep the rest of your award-winning process the same (100 teaspoons, same ingredients, same scoring system).
 
 
-#### Project 16:
+#### Project 16: Recursive Functions 3.0
 
 Your Aunt Sue has given you a wonderful gift, and you'd like to send her a thank you card. However, there's a small problem: she signed it "From, Aunt Sue".
 
@@ -134,13 +134,34 @@ You make a list of the things you can remember about each Aunt Sue. Things missi
 
 What is the number of the Sue that got you the gift?
 
-#### Project 17:
+#### Project 17:Binary Operations and Unique Combinations
 
 The elves bought too much eggnog again - 150 liters this time. To fit it all into your refrigerator, you'll need to move it into smaller containers. You take an inventory of the capacities of the available containers.
 
 Filling all containers entirely, how many different combinations of containers can exactly fit all 150 liters of eggnog?
 
-#### Project 18:
+#### Project 18: 2D List Grid and Manipulation, DeepCopy
+
+After the million lights incident, the fire code has gotten stricter: now, at most ten thousand lights are allowed. You arrange them in a 100x100 grid.
+
+Never one to let you down, Santa again mails you instructions on the ideal lighting configuration. With so few lights, he says, you'll have to resort to animation.
+
+Start by setting your lights to the included initial configuration (your puzzle input). A # means "on", and a . means "off".
+
+Then, animate your grid in steps, where each step decides the next configuration based on the current one. Each light's next state (either on or off) depends on its current state and the current states of the eight lights adjacent to it (including diagonals). Lights on the edge of the grid might have fewer than eight neighbors; the missing ones always count as "off".
+
+The state a light should have next is based on its current state (on or off) plus the number of neighbors that are on:
+
+- A light which is on stays on when 2 or 3 neighbors are on, and turns off otherwise.
+- A light which is off turns on if exactly 3 neighbors are on, and stays off otherwise.
+
+All of the lights update simultaneously; they all consider the same current state before moving to the next.
+
+In your grid of 100x100 lights, given your initial configuration, how many lights are on after 100 steps?
+
+You flip the instructions over; Santa goes on to point out that this is all just an implementation of Conway's Game of Life. At least, it was, until you notice that something's wrong with the grid of lights you bought: four lights, one in each corner, are stuck on and can't be turned off. The example above will actually run like this:
+
+In your grid of 100x100 lights, given your initial configuration, but with the four corners always in the on state, how many lights are on after 100 steps?
 
 #### Project 19:
 
