@@ -1,80 +1,68 @@
-# attempt 1 fail
-# example_list = [20, 15, 10, 5, 5]
-# containers_list = example_list
-# total_volume = 25
-# containers_list = [33, 14, 18, 20, 45, 35, 16, 35, 1, 13, 18, 13, 50, 44, 48, 6, 24, 41, 30, 42]
-# total_volume = 150
-#
-# containers_list.sort(reverse=True)
-#
-#
-# def rerun_list(list_var, index, limit_var, start_position=0):
-#     list_length = len(list_var)
-#     permutations = []
-#     permutation = [list_var[index]]
-#     list_sum = list_var[index]
-#     next_position = None
-#
-#     for k in range(0, list_length):
-#         circular_variable = k + start_position
-#         if circular_variable >= list_length:
-#             circular_variable -= list_length
-#         if index == circular_variable:
-#             pass
-#         elif list_sum + list_var[circular_variable] <= limit_var:
-#             if next_position is None:
-#                 next_position = circular_variable + 1
-#             list_sum += list_var[circular_variable]
-#             permutation.append(list_var[circular_variable])
-#
-#     if sum(permutation) == limit_var:
-#         permutation.sort(reverse=True)
-#         permutations.append(permutation)
-#
-#     if next_position != list_length and index != list_length - 1 != next_position:
-#         permutations.extend(rerun_list(list_var, index, limit_var, next_position))
-#
-#     return permutations
-#
-#
-# containers_dict = {}
-# for indx in containers_list:
-#     containers_dict[indx] = containers_list.count(indx)
-#
-# permutations_list = []
-# for i in range(0, len(containers_list)):
-#     permutations_list.extend(rerun_list(containers_list, i, total_volume))
-#
-# for sortlist in range(0, len(permutations_list)):
-#     permutations_list[sortlist].sort(reverse=True)
-#
-# final_list = []
-#
-# for lists in permutations_list:
-#     max_counts = 1
-#
-#     for item in lists:
-#         max_item = containers_dict[item] - lists.count(item) + 1
-#         max_counts *= max_item
-#     while final_list.count(lists) < max_counts:
-#         final_list.append(lists)
-#         counts = final_list.count(lists)
-#
-# print(final_list)
-# print(len(final_list))
-from numpy import vectorize
-
+from time import time
+start = time()
 containers_list = [33, 14, 18, 20, 45, 35, 16, 35, 1, 13, 18, 13, 50, 44, 48, 6, 24, 41, 30, 42]
+# containers_list = [20, 10, 15, 5, 5]
+total_volume = 150
 
-x = vectorize(int)(containers_list)
-c = 0
-for i in range(1 << len(x)):
-    t = i
-    s = 0
-    for j in x:
-        if t % 2 == 1:
-            s += j
-        t //= 2
-    if s == 150:
-        c += 1
-print(c)
+
+def next_bit(binary_arr):
+    bits = len(binary_arr)
+    if binary_arr[bits-1] == 0:
+        binary_arr[bits-1] = 1
+    else:
+        index = bits-1
+        while binary_arr[index] == 1:
+            binary_arr[index] = 0
+            index -= 1
+        binary_arr[index] = 1
+    return binary_arr
+
+
+perms_list = []
+number_perms = 2**len(containers_list)
+bit_value = [0]*len(containers_list)
+for i in range(1, number_perms):
+    bit_value = next_bit(bit_value)
+    multiply_list = [a*b for a, b in zip(bit_value, containers_list)]
+    if sum(multiply_list) == total_volume:
+        new_list = bit_value.copy()
+        for zeros in range(0, new_list.count(0)):
+            new_list.remove(0)
+        perms_list.append(new_list)
+
+min_size = len(containers_list)
+size_count = 0
+for items in perms_list:
+    length = len(items)
+    if length == min_size:
+        size_count += 1
+    elif length < min_size:
+        min_size = length
+        size_count = 1
+
+
+print(len(perms_list))
+print(size_count)
+print(time()-start)
+
+
+# Working code from reddit - NO IDEA WHAT THIS DOES!
+# Answer is 1304 and takes 7.815 seconds to execute
+# from numpy import vectorize
+# from time import time
+# start_time = time()
+# containers_list = [33, 14, 18, 20, 45, 35, 16, 35, 1, 13, 18, 13, 50, 44, 48, 6, 24, 41, 30, 42]
+#
+# x = vectorize(int)(containers_list)
+# c = 0
+# for i in range(1 << len(x)):
+#     t = i
+#     s = 0
+#     for j in x:
+#         if t % 2 == 1:
+#             s += j
+#         t //= 2
+#     if s == 150:
+#         c += 1
+# print(c)
+# print(time() - start_time)
