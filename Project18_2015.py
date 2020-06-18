@@ -25,6 +25,8 @@ with open(Project_file) as file:
 
 
 def get_surrounding_lights(x_pos, y_pos, grid):
+    """Creates a 3x3 list around the specified point.
+     It then sums up the list and subtracts the specified point to get the value of the 8 'neighbors' around it"""
     x_start = max(0, x_pos - 1)
     x_end = min(x_pos + 1, len(grid[y_pos])-1)
     y_start = max(0, y_pos - 1)
@@ -39,6 +41,7 @@ def get_surrounding_lights(x_pos, y_pos, grid):
 
 
 def corner_lights(l_grid):
+    """Returns the given list, but with the corner indices set to 1"""
     l_grid[0][0] = 1
     l_grid[0][number_columns - 1] = 1
     l_grid[number_rows - 1][0] = 1
@@ -47,7 +50,7 @@ def corner_lights(l_grid):
 
 
 # Step through each step
-step_grid = deepcopy(corner_lights(light_grid))
+step_grid = deepcopy(corner_lights(light_grid))  # deepcopy makes sure that the lists don't point to the same bits
 for step in range(steps):
     for y_coord in range(len(light_grid)):
         for x_coord in range(len(light_grid[0])):
