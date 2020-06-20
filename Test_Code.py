@@ -1,19 +1,51 @@
-lines = [line for line in open('Project19_2015')]
+import math
+import numpy as np
 
-medicine = lines[-1].strip()
+if __name__ == '__main__':
 
-# LHS, RHS sorted with largest LHS first
-replacements = [(l.split()[-1], l.split()[0]) for l in lines if '=>' in l]
-replacements.sort(key=lambda x: len(x[0]))
-replacements = replacements[::-1]
+    min_presents = 33100000
+    min_units = min_presents // 10
 
-# greedy replacement on medicine, counting steps
-total = 0
-while medicine != 'e':
-    for lhs, rhs in replacements:
-        if lhs in medicine:
-            medicine = medicine.replace(lhs, rhs, 1)
-            total += 1
+    print("Part 1")
+
+    # min_presents = 1000
+    # min_units = min_presents // 10
+    max_num = min_units // 4
+    print("Find first house with at least {} presents".format(str(min_presents)))
+    print("Consider up to {} houses".format(str(max_num)))
+
+    total = np.zeros(max_num + 1, dtype=int)
+
+    for i in range(1, max_num + 1):
+        n = max_num // i
+        idx = i * np.array(range(1, n + 1))
+        total[idx] += i * 10
+
+    for i in range(1, max_num + 1):
+        if total[i] >= min_presents:
+            print("House {} got {} presents".format(i, total[i]))
             break
-    print(medicine)
-print(total)
+
+    # print("Part 2")
+    #
+    # # min_presents = 1000
+    # # min_units = min_presents // 10
+    # max_num = min_units // 4
+    # print("Find first house with at least {} presents").format(min_presents)
+    # print
+    # "Consider up to {} houses".format(max_num)
+    #
+    # total = np.zeros(max_num + 1, dtype=int)
+    #
+    # for i in range(1, max_num + 1):
+    #     n = max_num // i
+    #     if n > 50:
+    #         n = 50
+    #     idx = i * np.array(range(1, n + 1))
+    #     total[idx] += i * 11
+    #
+    # for i in range(1, max_num + 1):
+    #     if total[i] >= min_presents:
+    #         print
+    #         "House {} got {} presents".format(i, total[i])
+    #         break
