@@ -69,13 +69,14 @@
     <session id="-2035760061">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -88,6 +89,7 @@
           <entry key="Project19_2015" value="1" />
           <entry key="Project1_2015" value="1" />
           <entry key="Project20_2015" value="1" />
+          <entry key="Project21_2015" value="1" />
           <entry key="Project2_2015" value="1" />
           <entry key="Project3_2015" value="2" />
           <entry key="Project5_2015" value="1" />
@@ -97,14 +99,14 @@
           <entry key="Project9_2015" value="1" />
           <entry key="Test_Input" value="4" />
           <entry key="md" value="9" />
-          <entry key="py" value="66" />
+          <entry key="py" value="69" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="9" />
-          <entry key="PLAIN_TEXT" value="26" />
-          <entry key="Python" value="66" />
+          <entry key="PLAIN_TEXT" value="27" />
+          <entry key="Python" value="69" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -112,15 +114,15 @@
           <entry key="Python Console" value="29" />
           <entry key="Test_Input" value="461" />
           <entry key="dummy" value="27" />
-          <entry key="md" value="769" />
-          <entry key="py" value="26615" />
+          <entry key="md" value="778" />
+          <entry key="py" value="28215" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="769" />
+          <entry key="Markdown" value="778" />
           <entry key="PLAIN_TEXT" value="488" />
-          <entry key="Python" value="26644" />
+          <entry key="Python" value="28244" />
         </counts>
       </usages-collector>
     </session>
@@ -142,21 +144,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project20_2015.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="95" selection-start-column="95" selection-end-column="95" />
+            <state relative-caret-position="-85">
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
               <folding>
-                <marker date="1592678186012" expanded="true" signature="529:560" ph="..." />
+                <marker date="1592758190597" expanded="true" signature="529:560" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Project21_2015.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="302">
+              <caret line="70" column="51" lean-forward="true" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
+              <folding>
+                <marker date="1592872871976" expanded="true" signature="943:1131" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project21_2015">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="569">
-                <caret line="203" column="25" selection-start-line="203" selection-start-column="25" selection-end-line="203" selection-end-column="25" />
+              <first_editor relative-caret-position="453">
+                <caret line="220" lean-forward="true" selection-start-line="220" selection-end-line="220" />
               </first_editor>
               <second_editor />
             </state>
@@ -240,23 +263,24 @@
         <option value="$PROJECT_DIR$/Project19_2015.py" />
         <option value="$PROJECT_DIR$/Project20_2015" />
         <option value="$PROJECT_DIR$/Test_Code.py" />
-        <option value="$PROJECT_DIR$/Project20_2015.py" />
         <option value="$PROJECT_DIR$/Project20_2015_B.py" />
+        <option value="$PROJECT_DIR$/Project20_2015.py" />
+        <option value="$PROJECT_DIR$/Project21_2015" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Project21_2015.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="854" />
-    <option name="height" value="1017" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -268,6 +292,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,28 +311,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Project20_2015_B">
-    <configuration name="Project18_2015" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AdventofCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project18_2015.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Project21_2015">
     <configuration name="Project19_2015" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AdventofCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -371,6 +375,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Project21_2015" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AdventofCode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Project21_2015.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Test_Code" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AdventofCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -394,18 +419,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.Test_Code" />
-      <item itemvalue="Python.Project18_2015" />
       <item itemvalue="Python.Project19_2015" />
       <item itemvalue="Python.Project20_2015" />
       <item itemvalue="Python.Project20_2015_B" />
+      <item itemvalue="Python.Project21_2015" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Project21_2015" />
+        <item itemvalue="Python.Project20_2015" />
         <item itemvalue="Python.Project20_2015_B" />
         <item itemvalue="Python.Test_Code" />
-        <item itemvalue="Python.Project20_2015" />
         <item itemvalue="Python.Project19_2015" />
-        <item itemvalue="Python.Project18_2015" />
       </list>
     </recent_temporary>
   </component>
@@ -423,15 +448,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08851422" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.08851422" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2635575" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.33744395" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26286966" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.25191677" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -482,13 +508,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Project20_2015.py</url>
-          <line>91</line>
+          <line>93</line>
           <option name="timeStamp" value="214" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Test_Code.py</url>
           <line>8</line>
           <option name="timeStamp" value="215" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Project21_2015.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="227" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -803,6 +834,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Project20_2015_B.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Test_Code.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -813,6 +858,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Project21_2015">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Test_Input">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -820,30 +872,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project20_2015_B.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="60" selection-start-column="60" selection-end-column="60" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="453">
+            <caret line="220" lean-forward="true" selection-start-line="220" selection-end-line="220" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project20_2015.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="95" selection-start-column="95" selection-end-column="95" />
+        <state relative-caret-position="-85">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
           <folding>
-            <marker date="1592678186012" expanded="true" signature="529:560" ph="..." />
+            <marker date="1592758190597" expanded="true" signature="529:560" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="569">
-            <caret line="203" column="25" selection-start-line="203" selection-start-column="25" selection-end-line="203" selection-end-column="25" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/Project21_2015.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="70" column="51" lean-forward="true" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
+          <folding>
+            <marker date="1592872871976" expanded="true" signature="943:1131" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

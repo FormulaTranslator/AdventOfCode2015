@@ -67,13 +67,15 @@ def prime_regression(result):
 
 def get_factors(number):
     """returns all factors of a given number"""
-    start_value = int(number/2)
     divisors_set = set()
-    for i in range(2, start_value+1):
+    i = 2
+    while True:
+        if number / i < i:
+            return divisors_set
         if number % i == 0:
             divisors_set.add(i)
-            divisors_set.add(int(number/i))
-    return divisors_set
+            divisors_set.add(int(number / i))
+        i += 1
 
 
 def next_bit(binary_arr):

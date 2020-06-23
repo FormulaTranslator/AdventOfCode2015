@@ -10,10 +10,10 @@ def get_factors(number, limit=0):  # Part 2 function
     divisors_set = set()
     if limit == 0:
         limit = number
-    i = 2
+    i = 1
     while True:
         if number / i < i:
-            break
+            return divisors_set
         if number % i == 0:
             divisor2 = number // i
             if divisor2 < limit:
@@ -21,7 +21,6 @@ def get_factors(number, limit=0):  # Part 2 function
             if i < limit:
                 divisors_set.add(int(number / i))
         i += 1
-    return divisors_set
 
 
 step = 10000
@@ -35,9 +34,9 @@ while house_presents < min_presents:
     house += step
     # Part 1
     # factors = get_factors(house)
-    # house_presents = (sum(factors) + 1 + house) * 10
+    # house_presents = sum(factors) * 10
     # Part 2
     factors = get_factors(house, 50)
-    house_presents = (sum(factors) + house) * 11
+    house_presents = sum(factors) * 11
 
 print("House number {} got {} presents".format(house, house_presents))
