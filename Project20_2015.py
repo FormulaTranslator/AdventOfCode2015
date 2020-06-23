@@ -17,6 +17,7 @@ def prime_sum(power_dict):
     return int(result)
 
 
+# Not used. Created during trial and error process
 def get_prime_factors(number):
     """ Reduces a number to prime numbers and counts each"""
     result = number
@@ -47,19 +48,19 @@ def get_value(prime_factors):
     return int(result)
 
 
-def prime_regression(result):
+def prime_factors_regression(result):
     """ Returns the power number and the prime number.
     This was derived from (P^(k+1)-1)/(P-1) = result by
     solving for k. P is sequentially guessed"""
     return_list = None
     for prime in prime_numbers:
         intermediate1 = result * (prime-1) + 1
-        regression = log(intermediate1) / log(prime) - 1
-        if regression % 1 < 10**-10:
+        prime_regression = log(intermediate1) / log(prime) - 1
+        if prime_regression % 1 < 10**-10:
             if return_list is None:
-                return_list = [[prime, int(regression)]]
+                return_list = [[prime, int(prime_regression)]]
             else:
-                return_list.append([prime, int(regression)])
+                return_list.append([prime, int(prime_regression)])
         elif prime > result:
             return return_list
     return return_list
@@ -91,13 +92,15 @@ def next_bit(binary_arr):
     return binary_arr
 
 
+# Get factors of the end value (a sum of factors of the puzzle answer)
+# that have a prime
 all_factors = get_factors(End_value)
 valid_factors = []
 for factors in all_factors:
-    if prime_regression(factors) is not None:
+    if prime_factors_regression(factors) is not None:
         valid_factors.append(factors)
 
-
+# Get all combinations of the factors that multiply to the end value
 perms_list = []
 number_perms = 2**len(valid_factors)
 bit_value = [0]*len(valid_factors)
@@ -117,7 +120,7 @@ answer_list = []
 for numbers_list in perms_list:
     prime_factors_dict = {}
     for numbers in numbers_list:
-        prime_factors_dict[numbers] = prime_regression(numbers)
+        prime_factors_dict[numbers] = prime_factors_regression(numbers)
 
     # This loop finds all permutations of the possible prime regressions
     # I.E. if a number (403) has factors 13 and 31, 13's prime regression is [3, 2] and 31's prime regression
