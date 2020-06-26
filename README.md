@@ -251,8 +251,49 @@ At the start of each player turn (before any other effects apply), you lose 1 hi
 
 With the same starting stats for you and the boss, what is the least amount of mana you can spend and still win the fight?
 
-#### Project 23:
+#### Project 23: Dictionaries and lambda
 
-#### Project 24:
+Little Jane Marie just got her very first computer for Christmas from some unknown benefactor. It comes with instructions and an example program, but the computer itself seems to be malfunctioning. She's curious what the program does, and would like you to help her run it.
+
+The manual explains that the computer supports two registers and six instructions (truly, it goes on to remind the reader, a state-of-the-art technology). The registers are named a and b, can hold any non-negative integer, and begin with a value of 0. The instructions are as follows:
+
+hlf r sets register r to half its current value, then continues with the next instruction.
+- tpl r sets register r to triple its current value, then continues with the next instruction.
+- inc r increments register r, adding 1 to it, then continues with the next instruction.
+- jmp offset is a jump; it continues with the instruction offset away relative to itself.
+- jie r, offset is like jmp, but only jumps if register r is even ("jump if even").
+- jio r, offset is like jmp, but only jumps if register r is 1 ("jump if one", not odd).
+
+All three jump instructions work with an offset relative to that instruction. The offset is always written with a prefix + or - to indicate the direction of the jump (forward or backward, respectively). For example, jmp +1 would simply continue with the next instruction, while jmp +0 would continuously jump back to itself forever.
+
+The program exits when it tries to run an instruction beyond the ones defined.
+
+--- Part Two ---
+
+The unknown benefactor is very thankful for releasi-- er, helping little Jane Marie with her computer. Definitely not to distract you, what is the value in register b after the program is finished executing if register a starts as 1 instead?
+
+#### Project 24: Combinations
+
+It's Christmas Eve, and Santa is loading up the sleigh for this year's deliveries. However, there's one small problem: he can't get the sleigh to balance. If it isn't balanced, he can't defy physics, and nobody gets presents this year.
+
+No pressure.
+
+Santa has provided you a list of the weights of every package he needs to fit on the sleigh. The packages need to be split into three groups of exactly the same weight, and every package has to fit. The first group goes in the passenger compartment of the sleigh, and the second and third go in containers on either side. Only when all three groups weigh exactly the same amount will the sleigh be able to fly. Defying physics has rules, you know!
+
+Of course, that's not the only problem. The first group - the one going in the passenger compartment - needs as few packages as possible so that Santa has some legroom left over. It doesn't matter how many packages are in either of the other two groups, so long as all of the groups weigh the same.
+
+Furthermore, Santa tells you, if there are multiple ways to arrange the packages such that the fewest possible are in the first group, you need to choose the way where the first group has the smallest quantum entanglement to reduce the chance of any "complications". The quantum entanglement of a group of packages is the product of their weights, that is, the value you get when you multiply their weights together. Only consider quantum entanglement if the first group has the fewest possible number of packages in it and all groups weigh the same amount.
+
+What is the quantum entanglement of the first group of packages in the ideal configuration?
+
+--- Part Two ---
+
+That's weird... the sleigh still isn't balancing.
+
+"Ho ho ho", Santa muses to himself. "I forgot the trunk".
+
+Balance the sleigh again, but this time, separate the packages into four groups instead of three. The other constraints still apply.
+
+Now, what is the quantum entanglement of the first group of packages in the ideal configuration?
 
 #### Project 25:
