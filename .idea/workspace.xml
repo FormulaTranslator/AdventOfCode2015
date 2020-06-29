@@ -95,7 +95,7 @@
           <entry key="Project1_2015" value="1" />
           <entry key="Project20_2015" value="1" />
           <entry key="Project21_2015" value="1" />
-          <entry key="Project23_2015" value="1" />
+          <entry key="Project23_2015" value="2" />
           <entry key="Project24_2015" value="1" />
           <entry key="Project2_2015" value="1" />
           <entry key="Project3_2015" value="2" />
@@ -112,7 +112,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="13" />
-          <entry key="PLAIN_TEXT" value="29" />
+          <entry key="PLAIN_TEXT" value="30" />
           <entry key="Python" value="88" />
         </counts>
       </usages-collector>
@@ -145,11 +145,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project4_2015.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="510">
               <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Project23_2015">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="541">
+              <caret line="94" column="46" selection-start-line="94" selection-end-line="95" />
             </state>
           </provider>
         </entry>
@@ -236,7 +245,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -413,7 +422,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09641728" />
@@ -483,7 +492,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Project23_2015.py</url>
-          <line>31</line>
+          <line>75</line>
           <option name="timeStamp" value="282" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -784,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project23_2015">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project24_2015">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -888,8 +890,8 @@
           <caret line="23" column="40" lean-forward="true" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
-            <marker date="1593141479579" expanded="true" signature="409:1553" ph="..." />
-            <marker date="1593141479579" expanded="true" signature="468:899" ph="..." />
+            <marker date="1593470674129" expanded="true" signature="409:1553" ph="..." />
+            <marker date="1593470674129" expanded="true" signature="468:899" ph="..." />
           </folding>
         </state>
       </provider>
@@ -898,6 +900,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project23_2015">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="94" column="46" selection-start-line="94" selection-end-line="95" />
         </state>
       </provider>
     </entry>
