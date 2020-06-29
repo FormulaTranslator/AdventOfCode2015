@@ -52,8 +52,50 @@ Now find one that starts with six zeroes.
 
 #### Project 5:
 
+Santa needs help figuring out which strings in his text file are naughty or nice.
+
+A nice string is one with all of the following properties:
+
+- It contains at least three vowels (aeiou only), like aei, xazegov, or aeiouaeiouaeiou.
+- It contains at least one letter that appears twice in a row, like xx, abcdde (dd), or aabbccdd (aa, bb, cc, or dd).
+- It does not contain the strings ab, cd, pq, or xy, even if they are part of one of the other requirements.
+
+How many strings are nice?
+
+Realizing the error of his ways, Santa has switched to a better model of determining whether a string is naughty or nice. None of the old rules apply, as they are all clearly ridiculous.
+
+Now, a nice string is one with all of the following properties:
+
+- It contains a pair of any two letters that appears at least twice in the string without overlapping, like xyxy (xy) or aabcdefgaa (aa), but not like aaa (aa, but it overlaps).
+- It contains at least one letter which repeats with exactly one letter between them, like xyx, abcdefeghi (efe), or even aaa.
+
+How many strings are nice under these new rules?
+
 #### Project 6:
 
+Because your neighbors keep defeating you in the holiday house decorating contest year after year, you've decided to deploy one million lights in a 1000x1000 grid.
+
+Furthermore, because you've been especially nice this year, Santa has mailed you instructions on how to display the ideal lighting configuration.
+
+Lights in your grid are numbered from 0 to 999 in each direction; the lights at each corner are at 0,0, 0,999, 999,999, and 999,0. The instructions include whether to turn on, turn off, or toggle various inclusive ranges given as coordinate pairs. Each coordinate pair represents opposite corners of a rectangle, inclusive; a coordinate pair like 0,0 through 2,2 therefore refers to 9 lights in a 3x3 square. The lights all start turned off.
+
+To defeat your neighbors this year, all you have to do is set up your lights by doing the instructions Santa sent you in order.
+
+After following the instructions, how many lights are lit?
+
+--- Part Two ---
+
+You just finish implementing your winning light pattern when you realize you mistranslated Santa's message from Ancient Nordic Elvish.
+
+The light grid you bought actually has individual brightness controls; each light can have a brightness of zero or more. The lights all start at zero.
+
+The phrase turn on actually means that you should increase the brightness of those lights by 1.
+
+The phrase turn off actually means that you should decrease the brightness of those lights by 1, to a minimum of zero.
+
+The phrase toggle actually means that you should increase the brightness of those lights by 2.
+
+What is the total brightness of all lights combined after following Santa's instructions?
 #### Project 7:
 
 #### Project 8:

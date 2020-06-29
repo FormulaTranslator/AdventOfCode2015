@@ -4,19 +4,12 @@ Light_array = [[0 for length in range(array_length)] for width in range(array_wi
 
 with open('Project6_2015') as file:
     for line in file:
-        first_comma = line.find(',')
-        start_first_index = line.rfind(' ', 0, first_comma) + 1
-        through_position = line.find('through')
-        end_first_index = through_position - 1
-        second_index_start = line.find(' ', through_position)
-        second_comma = line.find(',', through_position)
-        first_index_first_number = int(line[start_first_index:first_comma])
-        first_index_second_number = int(line[first_comma+1:end_first_index])
-        second_index_first_number = int(line[second_index_start+1:second_comma-len(line)])
-        second_index_second_number = int(line[second_comma+1:])
+        instructions = line.rstrip('\n').split()
+        index = instructions.index('through')
+        first_index_first_number, first_index_second_number = [int(i) for i in instructions[index-1].split(',')]
+        second_index_first_number, second_index_second_number = [int(i) for i in instructions[index+1].split(',')]
 
         i = first_index_first_number
-
         while i <= second_index_first_number:
             j = first_index_second_number
             while j <= second_index_second_number:
