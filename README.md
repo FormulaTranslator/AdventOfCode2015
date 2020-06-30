@@ -96,7 +96,8 @@ The phrase turn off actually means that you should decrease the brightness of th
 The phrase toggle actually means that you should increase the brightness of those lights by 2.
 
 What is the total brightness of all lights combined after following Santa's instructions?
-#### Project 7:
+
+#### Project 7: Binary Operations and Lambda in Dictionaries
 
 This year, Santa brought little Bobby Tables a set of wires and bitwise logic gates! Unfortunately, little Bobby is a little under the recommended age range, and he needs help assembling the circuit.
 
