@@ -19,9 +19,9 @@ while True:
 from itertools import count
 
 
-def solve(password, *args):
+def solve(password, prefixes):
     numbers_to_add = count()
-    for prefix in args:
+    for prefix in prefixes:
         for number_to_add in numbers_to_add:
             secret_code = password + str(number_to_add)
             hash_result = md5(secret_code.encode())
@@ -31,6 +31,7 @@ def solve(password, *args):
                 break
 
 
-password_vars = solve('yzbqklnj', '00000', '000000')
+password_requirements = ['00000', '000000']
+password_vars = solve('yzbqklnj', password_requirements)
 print(*password_vars, sep='\n')
 
