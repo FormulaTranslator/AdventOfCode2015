@@ -1,7 +1,6 @@
 from hashlib import md5
 project_input = 'yzbqklnj'
 number_to_add = 0
-match_found = False
 
 while True:
     secret_code = project_input + str(number_to_add)
@@ -32,6 +31,6 @@ def solve(password, prefixes):
 
 
 password_requirements = ['00000', '000000']
-password_vars = solve('yzbqklnj', password_requirements)
+password_vars = solve(project_input, password_requirements)
 print(*password_vars, sep='\n')
 

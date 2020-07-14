@@ -50,7 +50,7 @@ If your secret key is pqrstuv, the lowest number it combines with to make an MD5
 
 Now find one that starts with six zeroes.
 
-#### Project 5:
+#### Project 5: String Manipulation with Map, RE
 
 Santa needs help figuring out which strings in his text file are naughty or nice.
 
