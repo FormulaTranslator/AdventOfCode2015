@@ -21,7 +21,7 @@ print(nice_counter)
 import re
 
 # Part 1
-repeated_letter = re.compile(r'(.)*\1')
+repeated_letter = re.compile(r'(.)\1')
 vowels = lambda input_string: sum([*map(input_string.lower().count, "aeiou")]) >= 3
 naughty_strings = lambda input_string: sum([*map(input_string.lower().count, ['ab', 'cd', 'pq', 'xy'])]) == 0
 
